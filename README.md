@@ -8,7 +8,18 @@ This project presents a **GSM-based Home Automation System** that allows users t
 - **Scheduling Timer:** Automate switching of appliances using RTC (Real-Time Clock) module.  
 - **Mobile App Integration:** Developed with MIT App Inventor for a simple control interface.  
 - **SMS Notifications:** Feedback messages indicate the status of appliances.  
-- **Energy Efficiency:** Helps reduce energy wastage by remotely managing appliances.  
+- **Energy Efficiency:** Helps reduce energy wastage by remotely managing appliances.
+
+## ⚙️ Functions  
+- **Turn Appliance ON/OFF:**  
+  - Send `"ON#<appliance_number>"` to switch an appliance ON.  
+  - Send `"OFF#<appliance_number>"` to switch an appliance OFF.  
+- **Scheduling Timer:**  
+  - Set automatic ON/OFF schedules using the built-in RTC module and push button switches.  
+- **Status Notifications:**  
+  - Receive SMS updates with the current status of controlled appliances.  
+- **Manual Control:**  
+  - Operate appliances directly using a physical switchbox.  
 
 ## 🛠️ System Flowchart  
 Below is a graphical representation of the execution flow for the system, illustrating key processes such as message reception, appliance control, and user notifications:  
@@ -23,23 +34,6 @@ Below is a graphical representation of the execution flow for the system, illust
 - **RTC Module (DS3231)**: Provides scheduling capabilities.  
 - **Relay Module (HL-54S)**: Manages appliance switching.  
 - **16x04 LCD Module**: Displays appliance status.  
-
-## 📋 Installation and Usage  
-1. Clone this repository:  
-   ```bash
-   git clone <repository-url>
-
-2. Open the source code in Arduino IDE and upload it to the Arduino Mega board.
-3. Connect the hardware components according to the schematic provided.
-4. Test the system by sending SMS commands:
-    - **"ON1"**: Turns on Light
-    - **"OFF1"**: Turns off Light
-    - **"ON2"**: Turns on Fan
-    - **"OFF2"**: Turns off Fan
-    - **"ON3"**: Turns on TV
-    - **"OFF3"**: Turns off TV
-5. Monitor appliance status on the LCD or mobile notifications.
-  > Any appliance will do as long as it supports the relay load
 
 ## 🚀 Future Improvements
 - Enhance system security to prevent unauthorized access.
